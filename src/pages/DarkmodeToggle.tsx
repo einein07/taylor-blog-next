@@ -42,7 +42,7 @@ export default function DarkmodeToggle(): JSX.Element {
         <button
           key={theme}
           className={
-            "float-left cursor-pointer pt-2 text-left text-sm font-thin"
+            "hover:text-red-900 dark:hover:text-yellow-100 float-left cursor-pointer pt-2 text-left text-sm font-bold"
           }
           onClick={toggleTheme}
           aria-label="Toggle theme"
