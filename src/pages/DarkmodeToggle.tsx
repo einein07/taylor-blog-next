@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
+// import { faSun, faMoon } from "@fortawesome/free-regular-svg-icons";
 import React, { useEffect, useState } from "react";
 
 export default function DarkmodeToggle(): JSX.Element {
@@ -44,7 +45,7 @@ export default function DarkmodeToggle(): JSX.Element {
         <button
           key={theme}
           className={
-            "float-left cursor-pointer pt-2 text-left text-sm text-red-700 dark:text-yellow-500"
+            "float-left cursor-pointer text-left text-sm text-red-700 dark:text-yellow-500"
           }
           onClick={toggleTheme}
           aria-label="Toggle theme"

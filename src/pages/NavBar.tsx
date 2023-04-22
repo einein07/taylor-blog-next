@@ -10,6 +10,9 @@ export default function NavBar() {
         <Link className="hover:text-blue-400" href="/blog">
           Blog
         </Link>
+        <Link className="hover:text-blue-400" href="/contact">
+          Contact
+        </Link>
       </div>
     </>
   );
