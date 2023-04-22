@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
 import React, { useEffect, useState } from "react";
 
 export default function DarkmodeToggle(): JSX.Element {
@@ -38,18 +40,18 @@ export default function DarkmodeToggle(): JSX.Element {
 
   return isMounted ? (
     <>
-      <div className="flex justify-start pt-1">
+      <div className="flex justify-start">
         <button
           key={theme}
           className={
-            "hover:text-red-900 dark:hover:text-yellow-100 float-left cursor-pointer pt-2 text-left text-sm font-bold"
+            "float-left cursor-pointer pt-2 text-left text-sm text-red-700 dark:text-yellow-500"
           }
           onClick={toggleTheme}
           aria-label="Toggle theme"
         >
-          {"Click me to "}
-          {theme === "lightmode" && "relax yourself!"}
-          {theme === "darkmode" && "brighten your day!"}
+          {/* {"Click me to "} */}
+          {theme === "lightmode" && <FontAwesomeIcon icon={faMoon} size="xl" />}
+          {theme === "darkmode" && <FontAwesomeIcon icon={faSun} size="xl" />}
         </button>
       </div>
     </>
