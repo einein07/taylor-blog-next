@@ -17,10 +17,10 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex min-h-screen items-start justify-center bg-amber-100 text-zinc-900 dark:bg-gray-900 dark:text-amber-100">
-        <div className="container flex flex-col items-center justify-center gap-6 px-4 py-8 ">
+      <main className="flex min-h-screen items-start justify-center bg-amber-100 font-mono text-zinc-900 dark:bg-[#282828] dark:text-[#b8bb26]">
+        <div className="container flex w-full flex-col items-center justify-center gap-6 px-4 py-8 ">
           <Greeting />
-          <div className="flex flex-row items-center justify-center gap-32 sm:gap-64 ">
+          <div className="flex w-full flex-row items-center justify-center gap-32 p-2 dark:bg-[#8ec07c] dark:text-[#282828] sm:gap-64 ">
             <NavBar />
             <DarkmodeToggle />
           </div>
@@ -54,9 +54,9 @@ const Home: NextPage = () => {
                 alt="image of dropbox"
               ></Image>
               <p>
-                <span className="text-lg  font-bold">Dropbox</span> is a
-                personal project asset storage system I created in Python. Over
-                2000 stars on github and counting
+                <span className="text-lg font-bold">Dropbox</span> is a personal
+                project asset storage system I created in Python. Over 2000
+                stars on github and counting
               </p>
             </div>
             <div className="flex w-[256px] flex-col gap-1">
