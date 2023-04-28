@@ -7,6 +7,8 @@ import DropboxImage from "../../public/images/dropbox.png";
 import DarkmodeToggle from "./DarkmodeToggle";
 import Greeting from "./Greeting";
 import NavBar from "./NavBar";
+import Introduction from "./Introduction";
+import Inventions from "./Inventions";
 
 const Home: NextPage = () => {
   return (
@@ -24,55 +26,8 @@ const Home: NextPage = () => {
             <NavBar />
             <DarkmodeToggle />
           </div>
-          <p className="leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris arcu
-            erat, laoreet eget fermentum congue, accumsan at metus. Pellentesque
-            lacinia, lectus et vehicula pulvinar, lacus tellus sagittis sapien,
-            at tincidunt neque nisi id leo. Etiam sit amet mi lobortis,
-            facilisis leo vehicula, fermentum ante. Donec tristique purus a mi
-            pretium lobortis. Nam leo lectus, sagittis eu felis a, faucibus
-            ultricies est. Aliquam sed justo faucibus, lacinia risus sed,
-            ullamcorper libero. Fusce quis imperdiet risus.
-          </p>
-
-          <p className="leading-relaxed">
-            Nulla tempus nisi ligula, vitae condimentum augue tempus eget. Sed
-            eget urna luctus, eleifend mauris ac, euismod eros. Praesent a
-            auctor nunc. Nullam dui odio, tempus at ipsum porta, tincidunt
-            auctor lorem. Aenean laoreet laoreet nisl, non convallis risus.
-            Etiam eget diam ut nisi aliquet tempus. Ut viverra congue elementum.
-            In eu maximus ipsum. Pellentesque vehicula erat non nisl pharetra,
-            sed posuere ipsum iaculis.
-          </p>
-          <h2 className="text-4xl font-bold">Inventions</h2>
-          <div className="flex flex-col gap-16 sm:flex-row">
-            <div className="flex w-[256px] flex-col gap-2">
-              <Image
-                className="drop-shadow-lg"
-                src={DropboxImage}
-                width={256}
-                alt="image of dropbox"
-              ></Image>
-              <p>
-                <span className="text-lg font-bold">Dropbox</span> is a personal
-                project asset storage system I created in Python. Over 2000
-                stars on github and counting
-              </p>
-            </div>
-            <div className="flex w-[256px] flex-col gap-1">
-              <Image
-                className="drop-shadow-lg"
-                src={TodoistImage}
-                width={256}
-                alt="image of todoist"
-              ></Image>
-              <p>
-                <span className="text-lg font-bold">Todoist</span> is a personal
-                project management app that innovates on the way we pretend{" "}
-                {`we're going to get things done.`}
-              </p>
-            </div>
-          </div>
+          <Introduction />
+          <Inventions />
         </div>
       </main>
     </>
